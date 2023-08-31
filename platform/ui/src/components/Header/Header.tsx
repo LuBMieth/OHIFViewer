@@ -22,11 +22,13 @@ function Header({
 
   // TODO: this should be passed in as a prop instead and the react-router-dom
   // dependency should be dropped
-  const onClickReturn = () => {
-    if (isReturnEnabled && onClickReturnButton) {
-      onClickReturnButton();
-    }
-  };
+
+  // Function for going back
+  // const onClickReturn = () => {
+  //   if (isReturnEnabled && onClickReturnButton) {
+  //     onClickReturnButton();
+  //   }
+  // };
 
   return (
     <NavBar
@@ -37,16 +39,7 @@ function Header({
         <div className="flex items-center">
           {/* // TODO: Should preserve filter/sort
               // Either injected service? Or context (like react router's `useLocation`?) */}
-          <div
-            className={classNames(
-              'inline-flex items-center mr-3',
-              isReturnEnabled && 'cursor-pointer'
-            )}
-            onClick={onClickReturn}
-          >
-            {isReturnEnabled && (
-              <Icon name="chevron-left" className="w-8 text-primary-active" />
-            )}
+          <div className={'inline-flex items-center mr-3'}>
             <div className="ml-4">
               {WhiteLabeling?.createLogoComponentFn?.(React, props) || (
                 <Svg name="logo-ohif" />
