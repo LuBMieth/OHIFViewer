@@ -21,9 +21,9 @@ window.config = {
       configuration: {
         friendlyName: 'dcmjs DICOMWeb Server',
         name: 'DCM4CHEE',
-        wadoUriRoot: 'http://localhost/dicom-web',
-        qidoRoot: 'http://localhost/dicom-web',
-        wadoRoot: 'http://localhost/dicom-web',
+        wadoUriRoot: 'https://thinkhealthapi.org:2087/orthanc/dicom-web',
+        qidoRoot: 'https://thinkhealthapi.org:2087/orthanc/dicom-web',
+        wadoRoot: 'https://thinkhealthapi.org:2087/orthanc/dicom-web',
         qidoSupportsIncludeField: true,
         supportsReject: true,
         imageRendering: 'wadors',
