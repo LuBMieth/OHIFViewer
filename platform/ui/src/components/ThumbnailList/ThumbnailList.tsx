@@ -57,10 +57,10 @@ const ThumbnailList = ({
                   messages={messages}
                   viewportIdentificator={viewportIdentificator}
                   isActive={isActive}
-                  onClick={() => onThumbnailClick(displaySetInstanceUID)}
-                  onDoubleClick={() =>
-                    onThumbnailDoubleClick(displaySetInstanceUID)
-                  }
+                  onClick={() => {
+                    onThumbnailClick(displaySetInstanceUID);
+                    onThumbnailDoubleClick(displaySetInstanceUID);
+                  }}
                 />
               );
             case 'thumbnailTracked':
@@ -79,10 +79,10 @@ const ThumbnailList = ({
                   viewportIdentificator={viewportIdentificator}
                   isTracked={isTracked}
                   isActive={isActive}
-                  onClick={() => onThumbnailClick(displaySetInstanceUID)}
-                  onDoubleClick={() =>
-                    onThumbnailDoubleClick(displaySetInstanceUID)
-                  }
+                  onClick={() => {
+                    onThumbnailClick(displaySetInstanceUID);
+                    onThumbnailDoubleClick(displaySetInstanceUID);
+                  }}
                   onClickUntrack={() => onClickUntrack(displaySetInstanceUID)}
                 />
               );
