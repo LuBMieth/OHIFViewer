@@ -100,10 +100,10 @@ const ThumbnailList = ({
                   description={description}
                   canReject={canReject}
                   onReject={onReject}
-                  onClick={() => onThumbnailClick(displaySetInstanceUID)}
-                  onDoubleClick={() =>
-                    onThumbnailDoubleClick(displaySetInstanceUID)
-                  }
+                  onClick={() => {
+                    onThumbnailClick(displaySetInstanceUID);
+                    onThumbnailDoubleClick(displaySetInstanceUID);
+                  }}
                   viewportIdentificator={viewportIdentificator}
                   isHydratedForDerivedDisplaySet={
                     isHydratedForDerivedDisplaySet
